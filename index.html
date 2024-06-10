@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R. Suriyamoorthy Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+            border: 5px solid;
+            border-image-source: linear-gradient(to left, red, yellow, green, blue);
+            border-image-slice: 1;
+        }
+        nav {
+            background-color: #FF5733;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-image: url('https://i.pinimg.com/originals/e4/80/72/e4807255da9fc1fa2ebb5c8e036434b1.gif');
+            background-size: cover;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 180px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            position: relative;
+        }
+        .topleft {
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            font-size: 100px;
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        }
+        nav {
+            background-color: #FF5733;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 10px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        #home {
+            background-color: #f5f5f5;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .intro {
+            flex: 1;
+        }
+        .intro h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .profile-pic {
+            flex: 0 0 200px;
+            margin-left: 50px;
+        }
+        .profile-pic img {
+            border-radius: 10%;
+            border: 10px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 100;
+            border-radius: 40%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        small {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about, .resume, .projects, .contact {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #060011;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .resume a, .projects a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .resume a:hover, .projects a:hover {
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        }
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .links li {
+            margin-bottom: 10px;
+        }
+        .links a {
+            color: #c2ff33;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .contact img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .projects {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .projects li {
+            flex: 1 1 45%;
+            margin: 10px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+            cursor: pointer;
+        }
+        .projects p.project-description {
+            margin: 10px 0;
+            color: #666;
+        }
+        .projects a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .projects a:hover {
+            text-decoration: underline;
+        }
+        .project-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+          <div class="intro">
+            <h1>SURIYAMOORTHY RameshKavitha</h1>
+            <p>
+              Started as Student IETE | Startup TN Winner | Winner Technoverse2023 | Patent Holder | Content Writer | Student Ambassador | Social Activist | Intern | SEO | Founder of PB | Texas Instrumentation | Prefinal Year Student
+            </p>
+          </div>
+          <div class="profile-pic">
+            <img src="image.jpg" alt="img" width="150" height="150">
+          </div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    <div class="slider">
+        <div class="slides slide-animation">
+            <img src="slide1.jpeg" alt="Slide 1">
+            <img src="slide2.jpeg" alt="Slide 2">
+            <img src="slide3.jpeg" alt="Slide 3">
+            <img src="slide4.jpeg" alt="Slide 4">
+            <img src="slide5.jpeg" alt="Slide 5">
+            <img src="slide5.jpeg" alt="Slide 6">
+        </div>
+        <div class="navigation">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p align="justify">
+            In my journey, I've blended personal growth and community impact, highlighting my commitment through internships, social activities, projects, and donations. Internships expanded my horizons, instilled a strong work ethic, and deepened my professional understanding. As a Brand Executive at TEACHNOOK, I honed marketing and communication skills. My Project Intern role at Real Sports AI demonstrated dedication to innovation. As an Engineer Intern at Kodacy, I embraced software complexity, enhancing my problem-solving skills.
+            Social activism is a core aspect of my journey. Through "Step-up," I actively engage in volunteer work for NGOs, emphasizing skill-building and raising awareness on issues like equality, politics, and stress management. This experience has cultivated empathy and effective teamwork.
+            A passion for innovation drives my project work. Currently, I'm writing a paper for journal publication in OCR, Li-Fi, and Bluetooth extender fields, pushing the boundaries of technology and knowledge dissemination.
+            My commitment to betterment extends beyond volunteerism. Donating engineering books to my department's library reflects my dedication to education and knowledge sharing, strengthening the sense of community and a desire for positive change.
+            Companies' HR departments should be attracted to my profile because it reflects an adaptable, hardworking individual with a strong work ethic, innovation commitment, and social responsibility. I'm a candidate who can excel within an organization and actively contribute to its growth and positive impact on society.
+        </p>
+    </section>
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <table>
+          <tr>
+            <td>
+              <img src="https://t3.ftcdn.net/jpg/04/75/01/06/360_F_475010683_QcMoX9EuZkjVToNNtXCDbejMo4tIj06i.jpg" class="project-logo" style="width: 50px; height: 50px;">
+            </td>
+            <td>
+              <a href="https://docs.google.com/document/d/1Kq1vi3kCXm1a5QyJkyafYhRm9A46mRqr/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download My Resume</a>
+            </td>
+          </tr>
+        </table>
+      
+        <h2>Cover Letter</h2>
+        <table>
+          <tr>
+            <td>
+              <img src="https://static.vecteezy.com/system/resources/previews/009/966/221/non_2x/cover-letter-icon-style-vector.jpg" class="project-logo" style="width: 50px; height: 50px;">
+            </td>
+            <td>
+              <a href="https://docs.google.com/document/d/1l9LtFKXVg6LJo-Gq5MaGV4GEpUIaedKT/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download My Cover Letter</a>
+            </td>
+          </tr>
+        </table>
+      
+        <h2>Patent</h2>
+        <table>
+          <tr>
+            <td>
+              <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/AC/ZF/PR/30831566/international-patent-registration-service-500x500.jpg" class="project-logo" style="width: 50px; height: 50px;">
+            </td>
+            <td>
+              <a href="https://drive.google.com/file/d/1cWPV63EZhVPZcl5L_aSudO2pC-XmWarE/view?usp=drive_link" download>Download My Patent</a>
+            </td>
+          </tr>
+        </table>
+      
+        <h2>Appreciation Letter</h2>
+        <table>
+          <tr>
+            <td>
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/certificate-3081644-2564211.png" class="project-logo" style="width: 50px; height: 50px;">
+            </td>
+            <td>
+              <a href="https://docs.google.com/document/d/1l9LtFKXVg6LJo-Gq5MaGV4GEpUIaedKT/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download My Appreciation Letter</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+                 <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <ul>
+                  <li>
+                    <h3 id="Pettikadai" class="project-title">Pettikadai</h3>
+                    <img src="https://static.vecteezy.com/system/resources/previews/011/598/887/non_2x/ecommerce-logo-icon-free-vector.jpg" alt="Pettikadai" class="project-logo">
+                    <p class="project-description">Description of the Pettikadai project...</p>
+                  </li>
+                  <li>
+                    <h3 id="DroneProject" class="project-title">Revolutionizing Response Drone Creating Versatile Solutions for India's Critical Needs like Flood</h3>
+                    <img src="https://img.freepik.com/premium-vector/delivery-drone-flying-with-package-box-location-symbol_108231-435.jpg" alt="Drone Project" class="project-logo">
+                    <p class="project-description">Drones deliver essential medical supplies during floods, saving lives efficiently.</p>
+                  </li>
+                  <li>
+                    <h3 id="RoadSignDetection" class="project-title">Automatic Road Sign Detection using Neural Networks</h3>
+                    <img src="https://previews.123rf.com/images/bsd555/bsd5551909/bsd555190900007/129876509-sign-recognition-concept-icon-traffic-signs-detection-smart-car-on-road-sensor-technologies-for-safe.jpg" class="project-logo">
+                    <p class="project-description">Robust traffic sign detection using Raspberry Pi and machine learning.</p>
+                  </li>
+                  <li>
+                    <h3 id="SmartNewspaper" class="project-title">Smart Newspaper Reading System using Neural Networks</h3>
+                    <img src="https://cdn.sick.com/media/ZOOM/2/82/782/IM0077782.png" alt="Smart Newspaper" class="project-logo">
+                    <p class="project-description">Neural network-powered smart newspaper reader for enhanced accessibility and convenience.</p>
+                  </li>
+                  <li>
+                    <h3 id="LoraRover" class="project-title">Lora-based Rover</h3>
+                    <img src="https://www.nic.in/wp-content/uploads/2023/06/lora-2.png" alt="Lora Rover" class="project-logo">
+                    <p class="project-description">LoRa-based rover for long-range communication and remote exploration.</p>
+                  </li>
+                  <li>
+                    <h3 id="PathPartner" class="project-title">PathPartner</h3>
+                    <img src="https://webapp.way2serviz.in/wp-content/uploads/2023/05/Bike-Taxi-App-Bike-Taxi-Kolkata-Bike-Taxi-Number-Bike-Taxi-BroomBoom-1.png" alt="PathPartner" class="project-logo">
+                    <p class="project-description">PathPartner: Android app for booking taxis, bikes, and cars.</p>
+                  </li>
+                  <li>
+                    <h3 id="LifiTraffic" class="project-title">LI-FI ENABLED SMART TRAFFIC MANAGEMENT SYSTEM FOR VEHICLE-TO-VEHICLE COMMUNICATION</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Lifi_Logo.svg/1200px-Lifi_Logo.svg.png" alt="Li-Fi Traffic" class="project-logo">
+                    <p class="project-description">Li-Fi: High-bandwidth, secure vehicular communication for next-gen traffic management.</p>
+                  </li>
+                </ul>
+              </section>
+    <script src="script.js"></script>
+    
+    
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me through the following platforms:</p>
+        <table>
+            <ul><td>
+            <li>
+                <a href="https://www.linkedin.com/in/suriyamoorthy-rameshkavitha-63b646237/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                    LinkedIn
+                </a>
+            </li>
+        </td>
+            <td><li>
+                <a href="https://www.instagram.com/your-instagram-id" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    Instagram
+                </a>
+            </li>
+        </td>
+           <td> <li>
+                <a href="https://github.com/Surdhan" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                    GitHub
+                </a>
+            </li>
+        </td>
+            <td><li>
+                <a href="http://www.youtube.com/@suriyamoorthy4960" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                    YouTube
+                </a>
+            </li>
+        </td>
+        </ul> </table>
+        
+    </section>
+    <script>
+        let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+
+document.querySelector('.prev').addEventListener('click', () => {
+    slideIndex = (slideIndex > 0) ? slideIndex - 1 : totalSlides - 1;
+    updateSlidePosition();
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    slideIndex = (slideIndex < totalSlides - 1) ? slideIndex + 1 : 0;
+    updateSlidePosition();
+});
+
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+// Auto slide functionality
+setInterval(() => {
+    slideIndex = (slideIndex < totalSlides - 1) ? slideIndex + 1 : 0;
+    updateSlidePosition();
+}, 2000); // Change slides every 2 seconds
+    </script>
+</body>
+</html>

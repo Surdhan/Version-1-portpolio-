@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+            color: #333;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .project-details, .project-video, .project-images {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #ff4081;
+            text-decoration: none;
+            border: 2px solid #ff4081;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .download-link:hover {
+            background-color: #ff4081;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+            transform: scale(1.05);
+        }
+        
+        .download-link:active {
+            transform: scale(1);
+            box-shadow: 0 4px 10px rgba(255, 64, 129, 0.2);
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .images-container img {
+            width: 200%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone Project</h1>
+    </header>
+    <main>
+        <section class="project-details">
+            <p>This project focuses on developing versatile drone solutions to address critical needs such as flood response in India. These drones deliver essential medical supplies during floods, significantly enhancing the efficiency of emergency response and saving lives.</p>
+            <a class="download-link" href="https://docs.google.com/presentation/d/13AvFIc7fg_N-m6zUWWJ5XAk4kbA9K-cQ/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+        </section>
+       
+        <section class="project-images">
+            <h2>Project Images</h2>
+            <div class="images-container">
+                <img src="Droneimage (1).png" alt="Project Image 1">
+                        </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Back to Projects</a></p>
+    </footer>
+</body>
+</html>

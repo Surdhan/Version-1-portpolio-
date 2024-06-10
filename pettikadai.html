@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pettikadai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        color: #333;
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 1.5em 0;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-details, .project-video, .project-images {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .download-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #fff;
+        color: #ff4081;
+        text-decoration: none;
+        border: 2px solid #ff4081;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    
+    .download-link:hover {
+        background-color: #ff4081;
+        color: white;
+        box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+        transform: scale(1.05);
+    }
+    
+    .download-link:active {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(255, 64, 129, 0.2);
+    }
+    
+    .project-video h2, .project-images h2 {
+        margin-top: 0;
+    }
+    
+    .project-video video {
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    .project-images .images-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px; /* Ensure equal spacing between images */
+    }
+    
+    .project-images .images-container img {
+        max-width: 30%;
+        height: auto; /* Ensure the images maintain aspect ratio */
+        border: 5px solid #fff; /* Attractive border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for better visual appeal */
+        border-radius: 8px; /* Rounded corners */
+        object-fit: cover; /* Ensure images cover the frame equally */
+    }
+    
+    footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+    
+</style>
+<body>
+    <header>
+        <h1>Pettikadai</h1>
+    </header>
+    <main>
+        <section class="project-details">
+            <p text="justify">TPETTI KADAI is a project aimed at empowering women entrepreneurs through a modern e-commerce platform. We compress traditional and modern methods to create a user-friendly application that enables individuals, particularly women's self-help groups, to sell their products efficiently. The application focuses on delivering high-quality, hygienic goods to customers while streamlining the purchasing process. Through PETTI KADAI, we seek to provide opportunities for women to enter the business world and contribute to their economic independence.
+            </p>
+            <a href="https://docs.google.com/presentation/d/1-7tYRYpy9oMC3xP6s22kLhTM5yHFepX6/edit?usp=sharing&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+        </section>
+        <section class="project-images">
+            <h2>Project Images</h2>
+            <div class="images-container">
+                <img src="pettikadai (1).jpg" alt="Project Image 1">
+                <img src="pettikadai (2).jpg" alt="Project Image 2">
+                <img src="pettikadai (3).jpg" alt="Project Image 3">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
